@@ -21,21 +21,26 @@ DataFrame：
     df.sort_values(by="E") #按照值排序
 
 选择数据
+    
     df["A"],df.A #两个同一个效果
     df[df[0:3],df["20130103":"20130108"]] #dataframe的前三行,以及指定行
 
 select by label:loc
+    
     df.loc["20130102"]
     df.loc[:,["A","B"]]
     df.loc["20130102",["A","B"]]
 
 select by position:iloc
+    
     df.iloc[3,1] #索引第三行
 
 mixed selection:ix
+    
     df.ix[:3,["A","C"]] #混合筛选
 
 boolen indexing
+    
     df[df.A>8]
 
 
